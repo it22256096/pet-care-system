@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/homestyles.css">
+</head>
+<body>
+
+
+<ul class="menu">
+    <li class="menu"><a href="index.html">Home</a></li>
+    <li class="menu"><a href="appo.html">Appointments</a></li>
+    <li class="menu"><a href="foods.html">Foods</a></li>
+	<li class="menu"><a href="acc.html">Accessories</a></li>
+    <li class="menu"><a href="aboutus.html">About Us</a></li>
+	<li class="menu"><a href="contactus.html">Contact Us</a></li>
+
+</ul>
+<br> <style>
+    .contact{
+        font-size:larger;
+    }
+    .call{
+        position: relative; left: 120px; bottom: 110px;
+    }
+</style>
+<h1>Contact Us - Pet Care SL</h1>
+<div>Want to get in touch? We’d love to hear from you. Here’s how you can reach us…</div>
+<div class="contact">
+<img src="./images/contact.png" alt="" height="150" width="150"> 
+ <div class="call">Call us now <br> 0112563542</div>
+</div>
+<style>
+    .form{
+        position: relative; bottom: 70px;
+    }
+input{
+    padding: 5px 20px;
+    width:80%;
+    margin: 5px;
+    box-sizing: border-box;
+}
+input[type=email]{
+    position: relative; left: 30px;
+}
+textarea{
+    position: relative; left: 82px; bottom: 45px;
+    margin-top: 5px;
+    width: 79%;
+}
+button{
+    position: relative; left: 595px; bottom: 35px;
+    font-size: 20px;
+    
+}
+</style>
+<div class="form">
+    <form action="contactus.php" method="POST">
+        Full Name :<input type="text"><br>
+        Email     :<input type="email"><br>
+        Phone No. :<input type="text"><br>
+      <p>Message   : </p>  <textarea name="" id="" cols="30" rows="5"></textarea> <br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+
+
+<br>
+
+<style>
+        /* CSS styles for the footer */
+        .footer {
+            background-color: #f3f3f3;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        /* Optional styling for the footer links */
+        .footer a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+		
+		.resizable-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+
+<footer class="footer">
+<img class="resizable-image" src="images/footer.gif">
+<br>
+Find us on social meadia <br>
+<a href=""></a><img  src="images/smedia (1).png" width="50" height="50">
+<img  src="images/smedia (2).png" width="50" height="50">
+<img  src="images/smedia (3).png" width="50" height="50">
+<img  src="images/smedia (4).png" width="50" height="50">
+<img  src="images/smedia (5).png" width="50" height="50">
+<img  src="images/smedia (6).png" width="50" height="50">
+<img  src="images/smedia (7).png" width="50" height="50">
+
+    <p>&copy; 2023 Pet care SL. All rights reserved.</p>
+    <p>
+        <a href="#">Terms of Service</a> | 
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Cookie Policy</a>
+    </p>
+</footer>
+
+</body>
+</html>

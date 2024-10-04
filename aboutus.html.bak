@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/homestyles.css">
+</head>
+<body>
+
+
+<ul class="menu">
+    <li class="menu"><a href="index.html">Home</a></li>
+    <li class="menu"><a href="appo.html">Appointments</a></li>
+    <li class="menu"><a href="foods.html">Foods</a></li>
+	<li class="menu"><a href="accessories.html">Accessories</a></li>
+    <li class="menu"><a href="aboutus.html">About Us</a></li>
+	<li class="menu"><a href="contactus.html">Contact Us</a></li>
+
+</ul>
+
+<br>
+<h1>About Us</h1>
+<hr>
+<style>
+    h1{
+        margin: 4px;
+    }
+    .welcome{
+        width: 100%;
+        max-height: 650px;
+    }
+</style>
+
+<img class="welcome" src="./images/about1.png" alt="">
+<br>
+<h2>Pet Care SL is the largest Premier online pet shop in Sri Lanka</h2>
+provides wide range of quality pet food and pet supplies for the lifetime
+ needs of pets. At store, we love pets, and we believe pets make us 
+ better people. Our Online pet shop makes you easy to get your pet 
+ essentials to your doorstep any where in Sri Lanka, Our Physical Pet 
+ Shop in Colombo. You can get a great experience with your furry friend
+ 
+ 
+ Pets are not just animals; they become cherished members of our families. They bring us joy, companionship, and unconditional love. As responsible pet owners, it's our duty to provide them with the care they need to live happy and healthy lives.
+
+One crucial aspect of pet care is providing them with proper nutrition. Just like humans, pets require a balanced diet to maintain their overall health. Consult with a veterinarian to determine the appropriate type and amount of food for your pet, taking into consideration factors such as their age, breed, and any specific dietary requirements they may have.
+
+Regular exercise is also essential for pets. Dogs, for example, need daily walks and playtime to burn off excess energy and stay physically fit. Cats enjoy interactive toys and climbing structures to keep them active and engaged. Regular exercise not only helps pets maintain a healthy weight but also stimulates their minds and prevents behavioral issues.
+
+Proper grooming is another aspect of pet care. Regular brushing helps keep their coats clean and free of mats, and it can also serve as a bonding activity between you and your pet. Additionally, some pets may require regular nail trims, ear cleanings, and dental care. Again, consult with your veterinarian for specific grooming recommendations based on your pet's needs.
+<br><br>
+<style>
+        /* CSS styles for the footer */
+        .footer {
+            background-color: #f3f3f3;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        /* Optional styling for the footer links */
+        .footer a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+		
+		.resizable-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+
+<footer class="footer">
+<img class="resizable-image" src="images/footer.gif">
+<br>
+Find us on social meadia <br>
+<a href=""></a><img  src="images/smedia (1).png" width="50" height="50">
+<img  src="images/smedia (2).png" width="50" height="50">
+<img  src="images/smedia (3).png" width="50" height="50">
+<img  src="images/smedia (4).png" width="50" height="50">
+<img  src="images/smedia (5).png" width="50" height="50">
+<img  src="images/smedia (6).png" width="50" height="50">
+<img  src="images/smedia (7).png" width="50" height="50">
+
+    <p>&copy; 2023 Pet care SL. All rights reserved.</p>
+    <p>
+        <a href="#">Terms of Service</a> | 
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Cookie Policy</a>
+    </p>
+</footer>
+
+</body>
+</html>

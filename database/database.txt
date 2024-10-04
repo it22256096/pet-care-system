@@ -1,0 +1,59 @@
+/*appintment*/
+
+CREATE TABLE appointments (
+  Ap_id INT AUTO_INCREMENT PRIMARY KEY,
+  full_name VARCHAR(255) NOT NULL,
+  pet VARCHAR(255) NOT NULL,
+  phone_number VARCHAR(20) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  appointment_date DATE NOT NULL,
+  appointment_time TIME NOT NULL,
+  area VARCHAR(255) NOT NULL,
+  city VARCHAR(255) NOT NULL,
+  state VARCHAR(255) NOT NULL,
+  post_code VARCHAR(10) NOT NULL
+
+);
+
+/*contact us*/
+
+CREATE TABLE contact_messages (
+  cont_id INT AUTO_INCREMENT PRIMARY KEY,
+  full_name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  phone_number VARCHAR(20) NOT NULL,
+  message TEXT NOT NULL
+
+);
+
+/*signup*/
+
+CREATE TABLE signup (
+  p_id INT AUTO_INCREMENT PRIMARY KEY,
+  account VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  gender VARCHAR(10) NOT NULL
+
+);
+
+/*payment*/
+
+CREATE TABLE payments (
+  pay_id INT AUTO_INCREMENT PRIMARY KEY,
+  card_number VARCHAR(16) NOT NULL,
+  expiration_date VARCHAR(7) NOT NULL,
+  cvv VARCHAR(3) NOT NULL,
+  cardholder_name VARCHAR(255) NOT NULL
+  
+);
+
+/*login*/
+
+CREATE TABLE users (
+  use_id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL
+
+);

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pet Care Profile</title>
+    <link rel="stylesheet" type="text/css" href="styles/profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <h1>User profile</h1>
+        </div>
+        <div class="profile-content">
+            <div class="profile-picture">
+                <img align="center" src="images/user.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-details">
+                <h2>John Doe</h2>
+                <p>Location: New York</p>
+                <p>Email: johndoe@example.com</p>
+                <p>Phone: +1 123-456-7890</p>
+                <p>About Me:</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis lacus sit amet est vulputate tincidunt. Donec sit amet purus ut velit feugiat pulvinar. Etiam posuere risus vel interdum hendrerit.</p>
+            </div>
+        </div>
+    </div>
+	
+<style>
+        /* CSS styles for the footer */
+        .footer {
+            background-color: #f3f3f3;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        /* Optional styling for the footer links */
+        .footer a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+		
+		.resizable-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+
+<footer class="footer">
+<img class="resizable-image" src="images/footer.gif">
+<br>
+<img  src="images/smedia (1).png" width="50" height="50">
+<img  src="images/smedia (2).png" width="50" height="50">
+<img  src="images/smedia (3).png" width="50" height="50">
+<img  src="images/smedia (4).png" width="50" height="50">
+<img  src="images/smedia (5).png" width="50" height="50">
+<img  src="images/smedia (6).png" width="50" height="50">
+<img  src="images/smedia (7).png" width="50" height="50">
+
+    <p>&copy; 2023 Pet care SL. All rights reserved.</p>
+    <p>
+        <a href="#">Terms of Service</a> | 
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Cookie Policy</a>
+    </p>
+</footer>
+</body>
+</html>

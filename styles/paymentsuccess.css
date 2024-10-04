@@ -1,0 +1,7 @@
+.profile-container {
+    max-width: 6000px;
+	max-height:6000px;
+    margin: 0 auto;
+    padding: 20px;
+	background-image: url("../images/back.jpg");
+background-size:cover;}

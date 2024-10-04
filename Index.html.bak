@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+	
+	 <style>
+        /* CSS styles for the pricing table */
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .pricing-column {
+            width: 200px;
+            padding: 20px;
+            margin: 0 10px;
+            background-color: #f3f3f3;
+            text-align: center;
+        }
+        
+        .pricing-column h3 {
+            font-size: 24px;
+        }
+        
+        .pricing-column p {
+            font-size: 18px;
+            color: #888;
+        }
+        
+        .pricing-column .price {
+            font-size: 20px;
+            color: #333;
+            margin: 2px 0;
+        }
+        
+        .pricing-column .features {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .pricing-column .features li {
+            margin-bottom: 10px;
+        }
+        
+        .pricing-column .btn {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+	
+	
+	
+	<style>
+    .carousel-container {
+      width: 1000px;
+      height: 200px;
+      position: relative;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .carousel {
+      width: 170%;
+      height: 100%;
+      display: flex;
+      transition: transform 0.6s ease;
+    }
+
+    .carousel-item {
+      flex: 0 0 20%;
+      height: 100%;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .carousel-btn.prev {
+      left: 10px;
+    }
+
+    .carousel-btn.next {
+      right: 10px;
+    }
+  </style>
+	
+	<script>
+        // Function to display a welcoming message
+        function displayWelcomeMessage() {
+            var currentTime = new Date();
+            var currentHour = currentTime.getHours();
+
+            var greeting;
+
+            if (currentHour < 12) {
+                greeting = "Good morning!";
+            } else if (currentHour < 18) {
+                greeting = "Good afternoon!";
+            } else {
+                greeting = "Good evening!";
+            }
+
+            var messageElement = document.getElementById("welcomeMessage");
+            messageElement.innerHTML = greeting;
+        }
+    </script>
+	
+	
+</head>
+<body>
+
+
+<ul class="menu">
+	<li class="menu"><a href="profile.html"><img src="images/login.gif" width="40" height="40"></a></li>
+    <li class="menu"><a href="index.html">Home</a></li>
+    <li class="menu"><a href="appo.html">Appointments</a></li>
+    <li class="menu"><a href="foods.html">Foods</a></li>
+	<li class="menu"><a href="acc.html">Accessories</a></li>
+    <li class="menu"><a href="aboutus.html">About Us</a></li>
+	<li class="menu"><a href="contactus.html">Contact Us</a></li>
+
+</ul>
+<br>
+
+<div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-item">
+        <img src="images/Blue Orange Modern Bold Dog Pet Shop Video.gif" alt="Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Beige & Black Video How To Train Your Dog Youtube Intro.gif" alt="Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Blue Tosca Modern Bold Aquatic Pet Shop Video.gif" alt="Image 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Brown Organic Pet Care Center Video.gif" alt="Image 4">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Pet Accessories Shop - Purple Music Animated Video.gif" alt="Image 5">
+      </div>
+    </div>
+    <div class="carousel-btn prev">&#10094;</div>
+    <div class="carousel-btn next">&#10095;</div>
+  </div>
+
+  <script>
+    const carousel = document.querySelector('.carousel');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+
+    prevBtn.addEventListener('click', () => {
+      carousel.insertBefore(carousel.lastElementChild, carousel.firstElementChild);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      carousel.appendChild(carousel.firstElementChild);
+    });
+
+    setInterval(() => {
+      carousel.appendChild(carousel.firstElementChild);
+    }, 4000);
+  </script>
+
+
+
+<!--div  align="center"   class="logo">
+<img src="images/Brown Organic Pet Care Center Video.gif" width="310" height="170" >
+
+
+<img src="images/Blue Orange Modern Bold Dog Pet Shop Video.gif
+" width="300" height="170" >
+
+<img src="images/Blue Tosca Modern Bold Aquatic Pet Shop Video.gif " width="300" height="170" >
+
+
+<img src="images/Pet Accessories Shop - Purple Music Animated Video.gif
+ " width="300" height="170" >
+
+
+</div-->
+<br>
+
+<BODY onload="displayWelcomeMessage()">
+    <H1 id="welcomeMessage"></H1>
+</BODY>
+
+<center>
+    <img class="resizable-image" src="images/head.png" width="1500" height="250">
+</center>
+
+<center>
+    <img src="images/service.png" width="320" height="100">
+<center>
+
+<div class="pricing-table">
+    <div class="pricing-column">
+        <h3> FEEDING</h3>
+		<img src="images/petfeed.png" width="100" height="100">
+        <div class="price">$9.99/month</div>
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+    <div class="pricing-column">
+        <h3> TRAINING</h3>
+		<img src="images/pettrain.png" width="100" height="100">
+        <div class="price">$9.99/month</div>
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+    <div class="pricing-column">
+        <h3> TREATMENT</h3>
+		<img src="images/pettreat.png" width="100" height="100">
+        <div class="price">$9.99/month</div>
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+    <div class="pricing-column">
+        <h3> EXERCISE</h3>
+		<img src="images/petexe.png" width="100" height="100">
+        <div class="price">$9.99/month</div>
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+   <div class="pricing-column">
+        <h3> GROOMING</h3>
+		<img src="images/petbroom.png" width="100" height="100">
+        <div class="price">$9.99/month</div>
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+    <div class="pricing-column">
+        <h3> BOARDING</h3>
+		<img src="images/petbor.png" width="100" height="100">
+        <div class="price">$9.99/month</div>
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+</div>
+
+<br>
+
+<center>
+    <img class="resizable-image" src="images/gift.gif" width="1500" height="250">
+</center>
+
+<br>
+<div class="pricing-table">
+    <div class="pricing-column">
+		<img src="images/offer1.gif" width="200" height="370">
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+    <div class="pricing-column">
+		<img src="images/offer2.gif" width="200" height="370">
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+    <div class="pricing-column">
+		<img src="images/offer3.gif" width="200" height="370">
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+    <div class="pricing-column">
+		<img src="images/offer4.gif" width="200" height="370">
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+   <div class="pricing-column">
+		<img src="images/offer5.gif" width="200" height="370">
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+    <div class="pricing-column">
+		<img src="images/offer6.gif" width="200" height="370">
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+</div>
+
+<br>
+
+<center>
+    <img src="images/news.png" width="320" height="100">
+</center>
+<div class="pricing-table">
+	<div class="pricing-table">
+		<div class="pricing-column">
+			<img src="images/blog-1.jpg" width="200" height="200">
+			<h5 align="left">Sri lanka 16 Aprail, 2023</h5>
+			<h6 align="left">SRI LANKA IS CONSIDERING SELLING 100,000 ENDANGERED MACAQUES TO CHINA</h6>
+			<h6 align="left">The proposal to export toque macaques to
+							China for use in zoos has raised concerns among animal 
+							protection groups, who fear that the primates may be used
+							for medical research purposes due to the high demand</h6>
+			<a href="#" class="btn">Read More</a>
+		</div>
+	</div>
+ 
+	<div class="pricing-table">
+		<div class="pricing-column">
+			<img src="images/blog-2.jpg" width="200" height="200">
+			<h5 align="left">USA 05 May, 2023</h5>
+			<h6 align="left">VICTORY! MANDATORY ANIMAL TESTING SCRAPPED BY FDA MODERNIZATION ACT 2.0</h6>
+			<h6 align="left">The groundbreaking decision will allow the use of alternative methods to investigate
+							the safety and effectiveness of a new drug, ending a decades-old federal mandate that required animal testing.</h6>
+			<a href="#" class="btn">Read More</a>
+		</div>
+	</div>
+ 
+	<div class="pricing-table">
+		<div class="pricing-column">
+			<img src="images/blog-3.jpg" width="200" height="200">
+			<h5 align="left">USA 25 May, 2023</h5>
+			<h6 align="left">GUCCI BANS ANGORA AND RABBIT FELT</h6>
+			<h6 align="left">The brand’s parent company Kering, which also owns the likes of Balenciaga and Saint Laurent, 
+								has strengthened its fur ban as demand for animal-free fashion continues to grow.</h6><br>
+			<a href="#" class="btn">Read More</a>
+		</div>
+	</div>
+ 
+	<div class="pricing-table">
+		<div class="pricing-column">
+			<img src="images/blog-4.jpg" width="200" height="200">
+			<h5 align="left">USA 05 May, 2023</h5>
+			<h6 align="left">CANINE DISTEMPER OUTBREAK AND ANIMAL WELFARE VIOLATIONS</h6>
+			<h6 align="left">Animal breeding company Marshall Farms is under fire for a canine distemper outbreak that infected
+			250,000 baby ferrets, prompting PETA to file a complaint against the company for possible violations of the Animal Welfare Act.</h6><br>
+			<a href="#" class="btn">Read More</a>
+		</div>
+	</div>
+ </div>
+
+
+<!--br>
+<button> <a href="addItems.html">Add New Item</a> </button>
+<br>
+<center>
+    
+<div class="productData tbl" style="border-style: groove; border-color: DarkBlue">
+    <table border="1" width="100%">
+    <!--tr>
+        <th class="col1">Item Name</th>
+        <th style="text-align:left">Description</th>
+    </tr>
+    <tr>
+        <td>
+		<div class="row g-5">
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+	<img src="images/petbor.png" width="70" height="70">
+	
+<!--<i class="flaticon-house display-1 text-primary me-4"></i>>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Boarding</h5>
+                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <a class="text-primary text-uppercase" href="https://www.youtube.com">Get Servise<!--<i class="bi bi-chevron-right"></i>></a>
+                        </div>
+                    </div>
+                </div>
+		</td>
+        <td>
+		
+		<div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+	<img src="images/petfeed.png" width="70" height="70">
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Feeding</h5>
+                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <a class="text-primary text-uppercase" href="">Get Servise</a>
+                        </div>
+                    </div>
+                </div>
+		
+        <!--ul type="square">
+            <li>True tone display</li>
+            <li><font color="red">Wide color </font>display(P3)</li>
+            <li>3D touch</li>
+            <li>624 cd/m2 max brightness (typical)</li>
+            <li>Finger-print resistant oleophobic coating</li>
+            <li>Support for display of <font color="red">multiple languages </font>and characters simultaneously</li>
+        </ul>
+        </td>
+    </tr>
+	
+	<tr>
+	</tr>
+	
+    <tr>
+        <td>
+		<div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+	<img src="images/petbroom.png" width="70" height="70">
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Grooming</h5>
+                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <a class="text-primary text-uppercase" href="">Get Servise</a>
+                        </div>
+                    </div>
+                </div>
+		</td>
+        <td>
+		
+		<div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+	<img src="images/pettrain.png" width="70" height="70">
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Training</h5>
+                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <a class="text-primary text-uppercase" href="">Get Servise</a>
+                        </div>
+                    </div>
+                </div>
+		
+        <!--ol>
+            <li>True tone display</li>
+            <li>Wide color display(P3)</li>
+            <li>3D touch</li>
+            <li>624 cd/m2 max brightness (typical)</li>
+            <li>Finger-print resistant oleophobic coating</li>
+            <li>Support for display of multiple languages and characters simultaneously</li>
+        </ol>
+        </td>
+    </tr>
+    <tr>
+        <td><div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+	<img src="images/petexe.png" width="70" height="70">
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Exercise</h5>
+                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <a class="text-primary text-uppercase" href="">Get Servise</a>
+                        </div>
+                    </div>
+                </div></td>
+        <td>
+		
+		<div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+	<img src="images/pettreat.png" width="70" height="70">
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Treatment</h5>
+                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <a class="text-primary text-uppercase" href="">Get Servise</a>
+                        </div>
+                    </div>
+                </div>
+		
+        <!--ul>
+            <li>True tone display</li>
+            <li>Wide color display(P3)</li>
+            <li>3D touch</li>
+            <li>624 cd/m2 max brightness (typical)</li>
+            <li>Finger-print resistant oleophobic coating</li>
+            <li>Support for display of multiple languages and characters simultaneously</li>
+        </ul>
+        </td>
+    </tr>
+    </table>
+	
+	
+	
+	
+	
+	
+	
+	
+
+</div>
+</center-->
+
+<br>
+
+<style>
+        /* CSS styles for the footer */
+        .footer {
+            background-color: #f3f3f3;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        /* Optional styling for the footer links */
+        .footer a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+		
+		.resizable-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+
+<footer class="footer">
+<img class="resizable-image" src="images/footer.gif">
+<br>
+<img  src="images/smedia (1).png" width="50" height="50">
+<img  src="images/smedia (2).png" width="50" height="50">
+<img  src="images/smedia (3).png" width="50" height="50">
+<img  src="images/smedia (4).png" width="50" height="50">
+<img  src="images/smedia (5).png" width="50" height="50">
+<img  src="images/smedia (6).png" width="50" height="50">
+<img  src="images/smedia (7).png" width="50" height="50">
+
+    <p>&copy; 2023 Pet care SL. All rights reserved.</p>
+    <p>
+        <a href="aboutus.html">Terms of Service</a> | 
+        <a href="aboutus.html">Privacy Policy</a> | 
+        <a href="aboutus.html">Cookie Policy</a>
+    </p>
+</footer>
+
+</body>
+</html>

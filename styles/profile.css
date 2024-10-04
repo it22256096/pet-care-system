@@ -1,0 +1,32 @@
+.profile-container {
+    max-width: 6000px;
+	max-height:6000px;
+    margin: 0 auto;
+    padding: 20px;
+	background-image: url("../images/back.jpg");
+background-size:cover;}
+
+.profile-header {
+    text-align: center;
+}
+
+.profile-picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-details h2 {
+    margin-top: 0;
+	text-align: center;
+}
+
+.profile-details p {
+    margin-bottom: 5px;
+	text-align: center;
+}

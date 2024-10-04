@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Window</title>
+    <link rel="stylesheet" type="text/css" href="payment.css">
+</head>
+<body>
+    <h2>Payment Window</h2>
+
+    <form method="POST" action="payment_process.php">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required><br><br>
+
+        <label for="expirationDate">Expiration Date:</label>
+        <input type="text" id="expirationDate" name="expirationDate" required><br><br>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required><br><br>
+
+        <label for="name">Cardholder Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <a href="index.html"><input type="submit" value="Pay Now" ></a>
+    </form>
+	
+	<script>
+        // JavaScript code to handle form submission
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Perform any necessary form processing or validation here
+            
+            window.location.href = "index.html"; // Redirect to index.html after form submission
+        });
+    </script>
+</body>
+</html>

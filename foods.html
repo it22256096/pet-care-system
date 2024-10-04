@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foods</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+	
+	 <style>
+        /* CSS styles for the pricing table */
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .pricing-column {
+            width: 200px;
+            padding: 20px;
+            margin: 0 10px;
+            background-color: #f3f3f3;
+            text-align: center;
+        }
+        
+        .pricing-column h3 {
+            font-size: 24px;
+        }
+        
+        .pricing-column p {
+            font-size: 18px;
+            color: #888;
+        }
+        
+        .pricing-column .price {
+            font-size: 36px;
+            color: #333;
+            margin: 20px 0;
+        }
+        
+        .pricing-column .features {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .pricing-column .features li {
+            margin-bottom: 10px;
+        }
+        
+        .pricing-column .btn {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+	
+	
+	<style>
+	.foodtitle{
+	font-size: 36px;
+    color: #333;
+	}
+	
+	</style>
+	
+	<style>
+        /* CSS styles for the popup alert */
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f8f8f8;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            z-index: 9999;
+        }
+    </style>
+	
+	<script>
+        // Function to show the popup alert
+        function showPopup() {
+            var popup = document.getElementById("popupAlert");
+            popup.style.display = "block";
+        }
+
+        // Function to hide the popup alert
+        function hidePopup() {
+            var popup = document.getElementById("popupAlert");
+            popup.style.display = "none";
+        }
+    </script>
+</head>
+<body>
+
+
+<ul class="menu">
+    <li class="menu"><a href="index.html">Home</a></li>
+    <li class="menu"><a href="appo.html">Appointments</a></li>
+    <li class="menu"><a href="foods.html">Foods</a></li>
+	<li class="menu"><a href="acc.html">Accessories</a></li>
+    <li class="menu"><a href="aboutus.html">About Us</a></li>
+	<li class="menu"><a href="contactus.html">Contact Us</a></li>
+
+</ul>
+
+<center>
+    <img src="images/foods.png" width="320" height="100">
+<center>
+
+<div style="text-align: left;">
+  <h3 class="foodtitle">
+    <img src="images/dogfood.png" width="80" height="80" style="vertical-align: middle;">
+    DOG FOODS
+  </h3>
+</div>
+
+<div class="pricing-table">
+    <div class="pricing-column">
+        <h3> Pedigree Chicken & Vegetables</h3>
+		<img src="images/food1.png" width="200" height="200">
+        <div class="price">Rs 5,390.00</div>
+        <a href="" class="btn" onclick="showPopup()" >Buy Now</a>
+    </div>
+    
+    <div class="pricing-column">
+        <h3> Happy Dog Supreme</h3>
+		<img src="images/food2.png" width="200" height="200">
+        <div class="price">Rs 9,200.00</div>
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+    <div class="pricing-column">
+        <h3> Josera Mini Junior 900g</h3>
+		<img src="images/food3.png" width="200" height="200">
+        <div class="price">Rs 2,900.00</div>
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+    <div class="pricing-column">
+        <h3> Happy Dog Supreme </h3>
+		<img src="images/food4.png" width="200" height="200">
+        <div class="price">Rs 1,600.00</div>
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+   <div class="pricing-column">
+        <h3> Happy Josi Dog Junior</h3>
+		<img src="images/food5.png" width="200" height="200">
+        <div class="price">Rs 25,000.00</div>
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+   
+</div>
+
+
+<!-- Popup alert -->
+    <div id="popupAlert" class="popup">
+        <h3>Out of Stock</h3>
+        <p>This product is currently out of stock.</p>
+        <button onclick="hidePopup()">Close</button>
+    </div>
+
+<br>
+
+<center>
+    <img class="resizable-image" src="images/gift.gif" width="1500" height="250">
+</center>
+
+<br>
+<div style="text-align: left;">
+  <h3 class="foodtitle"><img src="images/catfood.png" width="80" height="80" style="vertical-align: middle;"> CAT FOODS</h3>
+</div>
+
+<div class="pricing-table">
+    <div class="pricing-column">
+        <h3> Happy Cat Culinary Adult</h3>
+		<img src="images/cfood1.png" width="200" height="200">
+        <div class="price">Rs 1,800.00</div>
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+    <div class="pricing-column">
+        <h3> Supreme Kitten Poultry</h3>
+		<img src="images/cfood2.png" width="200" height="200">
+        <div class="price">Rs 1,800.00</div>
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+    <div class="pricing-column">
+        <h3> Josera Mini Junior 900g</h3>
+		<img src="images/food3.png" width="200" height="200">
+        <div class="price">Rs 2,900.00</div>
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+    <div class="pricing-column">
+        <h3> Josi Cat Crispy Duck </h3>
+		<img src="images/cfood3.png" width="200" height="200">
+        <div class="price">Rs 28,000.00</div>
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+   <div class="pricing-column">
+        <h3> Zooroyal Chicken in carrot jelly</h3>
+		<img src="images/cfood4.png" width="200" height="200">
+        <div class="price">Rs 400.00</div>
+        <a href="payment.html" class="btn">Buy Now</a>
+    </div>
+    
+   
+</div>
+<br>
+
+<style>
+        /* CSS styles for the footer */
+        .footer {
+            background-color: #f3f3f3;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        /* Optional styling for the footer links */
+        .footer a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+		
+		.resizable-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+
+<footer class="footer">
+<img class="resizable-image" src="images/footer.gif">
+<br>
+<img  src="images/smedia (1).png" width="50" height="50">
+<img  src="images/smedia (2).png" width="50" height="50">
+<img  src="images/smedia (3).png" width="50" height="50">
+<img  src="images/smedia (4).png" width="50" height="50">
+<img  src="images/smedia (5).png" width="50" height="50">
+<img  src="images/smedia (6).png" width="50" height="50">
+<img  src="images/smedia (7).png" width="50" height="50">
+
+    <p>&copy; 2023 Pet care SL. All rights reserved.</p>
+    <p>
+        <a href="aboutus.html">Terms of Service</a> | 
+        <a href="aboutus.html">Privacy Policy</a> | 
+        <a href="aboutus.html">Cookie Policy</a>
+    </p>
+</footer>
+
+</body>
+</html>

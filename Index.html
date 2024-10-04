@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <style>
+        /* Form Container */
+        .form-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        /* Form Elements */
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style for radio buttons and checkboxes */
+        .form-check-label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Custom styles for radio buttons and checkboxes */
+        .form-radio,
+        .form-checkbox {
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Styled Form</h2>
+        <form>
+            <label class="form-label" for="name">Name:</label>
+            <input class="form-input" type="text" id="name" name="name">
+
+            <label class="form-label" for="email">Email:</label>
+            <input class="form-input" type="email" id="email" name="email">
+
+            <label class="form-label">Gender:</label>
+            <label class="form-radio">
+                <input type="radio" name="gender" class="form-radio"> Male
+            </label>
+            <label class="form-radio">
+                <input type="radio" name="gender" class="form-radio"> Female
+            </label>
+
+            <label class="form-label">Subscribe to newsletter:</label>
+            <label class="form-checkbox">
+                <input type="checkbox" name="subscribe" class="form-checkbox"> Yes
+            </label>
+
+            <button class="form-button" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
